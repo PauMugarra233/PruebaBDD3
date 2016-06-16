@@ -2,7 +2,7 @@ Given(/^I am on the home page$/) do
 puts  visit "http://www.google.com"
 end
 
-When /^I fill in "([^"]*)" with "([^"]*)"$/ do |element, text|
+When (/^I fill in "([^"]*)" with "([^"]*)"$/) do |element, text|
  fill_in element, with: text
  #page.driver.debug
 end
